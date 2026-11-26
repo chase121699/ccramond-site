@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCRAMOND | Apps</title>
+<meta name="description" content="CCRAMOND builds simple, private apps for everyday life, starting with PantryPal for iPhone and Apple Watch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html"><i aria-hidden="true"></i>CCRAMOND</a>
+    <nav aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="pantrypal.html">PantryPal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band hero">
+    <div class="wrap">
+      <div class="copy">
+        <span class="tag">Independent app developer</span>
+        <h1>Simple apps for the stuff of everyday life.</h1>
+        <p class="lead">CCRAMOND makes focused, private apps for iPhone and Apple Watch. No ads, no tracking, no account to create. Just tools that do one job well.</p>
+        <div class="row">
+          <a class="btn primary" href="pantrypal.html">Meet PantryPal</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <div class="island"></div>
+            <div class="bar"><b>Inventory</b></div>
+            <div class="seg"><span>All</span><span class="on">Fridge</span><span>Freezer</span><span>Pantry</span></div>
+            <div class="list">
+              <div class="item"><span class="dot" style="background:#e8f1ff"></span><div><strong>Whole milk</strong><small>1 full + ½ open</small></div><span class="badge b-warn">2 days</span></div>
+              <div class="item"><span class="dot" style="background:#fff4d6"></span><div><strong>Large eggs</strong><small>9 left</small></div><span class="badge b-ok">In stock</span></div>
+              <div class="item"><span class="dot" style="background:#ffe3d6"></span><div><strong>Cheddar</strong><small>¼ open</small></div><span class="badge b-low">Low</span></div>
+              <div class="item"><span class="dot" style="background:#dff5e8"></span><div><strong>Baby spinach</strong><small>1 bag</small></div><span class="badge b-warn">Use soon</span></div>
+              <div class="item"><span class="dot" style="background:#f0e6ff"></span><div><strong>Greek yogurt</strong><small>3 full</small></div><span class="badge b-ok">In stock</span></div>
+            </div>
+            <div class="fab">＋ Scan in</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="apps" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <h2>Apps</h2>
+      <p class="lead" style="margin-top:12px">One app today, more on the way.</p>
+      <div class="apps">
+        <a class="app feature" href="pantrypal.html">
+          <span class="icon" style="background:#fff">
+            <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect x="7" y="4" width="26" height="32" rx="5" fill="#00a86b"/><rect x="7" y="15" width="26" height="2.5" fill="#fff"/><rect x="11" y="8" width="2.5" height="5" rx="1.2" fill="#fff"/><rect x="11" y="20" width="2.5" height="7" rx="1.2" fill="#fff"/><circle cx="28" cy="29" r="7" fill="#ffd6e0"/><path d="M25 29l2 2 4-4" stroke="#0a0a0a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>PantryPal</h3>
+          <p>Know what's in your fridge, freezer and pantry without opening a door. Scan groceries in, get a heads-up before food expires, and share one inventory with everyone at home.</p>
+          <span class="more">Overview and features →</span>
+        </a>
+        <div class="app soon">
+          <span class="icon" style="background:var(--pink)">
+            <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><path d="M20 9v22M9 20h22" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" style="color:var(--pink-ink)"/></svg>
+          </span>
+          <h3>Next app</h3>
+          <p>Something new is in the works. Get in touch if you'd like to hear when it's ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band contact" id="contact">
+    <div class="wrap box">
+      <div style="display:grid;gap:14px">
+        <h2>Contact</h2>
+        <p class="lead">Questions, feedback, beta access or support for any CCRAMOND app, send an email and you'll hear back soon.</p>
+        <a class="mail" href="mailto:ccramond@gmail.com">ccramond@gmail.com</a>
+      </div>
+      <div style="display:grid;gap:10px;justify-items:start">
+        <div class="row">
+          <a class="btn primary" href="mailto:ccramond@gmail.com?subject=Hello%20from%20ccramond.com">Send an email</a>
+          <button class="btn ghost" id="copy" type="button">Copy address</button>
+        </div>
+        <p class="note" id="copied" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> CCRAMOND</span>
+    <span><a href="pantrypal.html">PantryPal</a> · <a href="mailto:ccramond@gmail.com">ccramond@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+{
+  const yr = document.getElementById('yr');
+  yr.textContent = new Date().getFullYear();
+  const btn = document.getElementById('copy'), note = document.getElementById('copied');
+  btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText('ccramond@gmail.com'); note.textContent = 'Copied to clipboard.'; }
+    catch (e) { note.textContent = 'Copy failed. The address is ccramond@gmail.com'; }
+  });
+}
+</script>
+</body>
+</html>

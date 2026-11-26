@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PantryPal | CCRAMOND</title>
+<meta name="description" content="PantryPal keeps one shared inventory of your fridge, freezer and pantry, warns you before food expires, and turns what's missing into a shopping list.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html"><i aria-hidden="true"></i>CCRAMOND</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="pantrypal.html" aria-current="page">PantryPal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band hero">
+    <div class="wrap">
+      <div class="copy">
+        <span class="tag">Version 1.0 · iPhone and Apple Watch</span>
+        <h1>PantryPal</h1>
+        <p class="lead">Know what's in your fridge, freezer and pantry without opening a door. PantryPal keeps one shared inventory for your whole household, warns you before food goes bad, and turns what's missing into a shopping list.</p>
+        <div class="row">
+          <a class="btn primary" href="#features">See the features</a>
+          <a class="btn ghost" href="mailto:ccramond@gmail.com?subject=PantryPal%20beta">Join the beta</a>
+        </div>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <div class="island"></div>
+            <div class="bar"><b>Use soon</b></div>
+            <div class="seg"><span class="on">Expiring</span><span>Low</span><span>Out</span></div>
+            <div class="list">
+              <div class="item"><span class="dot" style="background:#dff5e8"></span><div><strong>Baby spinach</strong><small>Fridge · opened Mon</small></div><span class="badge b-warn">Today</span></div>
+              <div class="item"><span class="dot" style="background:#e8f1ff"></span><div><strong>Whole milk</strong><small>1 full + ½ open</small></div><span class="badge b-warn">2 days</span></div>
+              <div class="item"><span class="dot" style="background:#ffe3d6"></span><div><strong>Chicken thighs</strong><small>Freezer · 2 packs</small></div><span class="badge b-low">5 days</span></div>
+              <div class="item"><span class="dot" style="background:#fff4d6"></span><div><strong>Sourdough</strong><small>Pantry · ½ loaf</small></div><span class="badge b-low">3 days</span></div>
+            </div>
+            <div class="fab">Add 3 to list</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" style="border-top:1px solid var(--line)">
+    <div class="wrap split">
+      <div class="copy">
+        <h2>Overview</h2>
+        <p class="lead">Scan it in when you unpack groceries, scan it out when you use it. PantryPal does the rest.</p>
+      </div>
+      <div class="copy">
+        <p>PantryPal tracks every item across your fridge, freezer, pantry and wine &amp; spirits cellar, including the jar that's only half full. It estimates expiration dates from food-safety guidelines, reminds you a few days ahead, and builds shopping lists from whatever is running low.</p>
+        <p>Everyone at home shares the same inventory through iCloud, so the person at the store always knows what's already in the house. Your data stays on your devices and in your own iCloud account.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Works on</dt><dd>iPhone (iOS 17+) and Apple Watch</dd></div>
+        <div><dt>Current version</dt><dd>1.0</dd></div>
+        <div><dt>Availability</dt><dd>Beta now, App Store soon</dd></div>
+        <div><dt>Price</dt><dd>Free for up to 15 items</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band" id="features" style="background:var(--card)">
+    <div class="wrap">
+      <h2>Features in version 1.0</h2>
+      <div class="features">
+        <article class="feat" style="background:var(--bg)">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#00a86b"/><path d="M11 13v14M15 13v14M19 13v14M23 13v14M27 13v14" stroke="#fff" stroke-width="2"/><path d="M8 20h24" stroke="#ffd6e0" stroke-width="2.5"/></svg>
+          <h3>Scan everything in</h3>
+          <ul>
+            <li>Barcode scanning for groceries from around the world, with product details filled in for you</li>
+            <li>Snap a photo when there's no barcode, like produce or leftovers</li>
+            <li>Scan a store receipt to add a whole shopping trip at once</li>
+            <li>Multipacks count as single items: a 12-pack is 12 cans</li>
+            <li>Ready-made templates for meat, produce, herbs, spices and takeout</li>
+          </ul>
+        </article>
+        <article class="feat" style="background:var(--bg)">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#ffd6e0"/><rect x="10" y="9" width="20" height="23" rx="3" fill="none" stroke="#0a0a0a" stroke-width="2.2"/><path d="M10 18h20" stroke="#0a0a0a" stroke-width="2.2"/><rect x="12" y="20" width="16" height="10" rx="1.5" fill="#00a86b"/></svg>
+          <h3>Never lose track</h3>
+          <ul>
+            <li>Full and partly used amounts ("2 full, ½ open")</li>
+            <li>Fridge, freezer, pantry and a wine &amp; spirits cellar</li>
+            <li>Sort and group by category, expiration, age or low stock</li>
+            <li>Search by name, brand, category or barcode</li>
+            <li>Health grades, plus flags for staples, favorites and treats</li>
+          </ul>
+        </article>
+        <article class="feat" style="background:var(--bg)">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#00a86b"/><circle cx="20" cy="21" r="10" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M20 15v6l4 3" stroke="#ffd6e0" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+          <h3>Use it before you lose it</h3>
+          <ul>
+            <li>Expiration dates estimated from food-safety guidelines, adjusted for where it's stored and when it was opened</li>
+            <li>Reminders a few days ahead, plus a weekly look at what's expiring</li>
+            <li>A "use soon" view so nothing gets forgotten at the back of the fridge</li>
+          </ul>
+        </article>
+        <article class="feat" style="background:var(--bg)">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#ffd6e0"/><path d="M9 12h3l3 14h13l2-10H14" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="17" cy="30" r="1.8" fill="#00a86b"/><circle cx="26" cy="30" r="1.8" fill="#00a86b"/></svg>
+          <h3>Shop smarter</h3>
+          <ul>
+            <li>Shopping lists built from what's low or out</li>
+            <li>Check items off in the store, then check your whole cart into inventory in one step</li>
+            <li>Recipes show what you already have and add the rest to a list</li>
+            <li>Scan recipes from cookbooks or recipe cards with your camera</li>
+          </ul>
+        </article>
+        <article class="feat" style="background:var(--bg)">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#00a86b"/><circle cx="15" cy="16" r="4" fill="#fff"/><circle cx="26" cy="16" r="4" fill="#ffd6e0"/><path d="M8 29c1-5 4-7 7-7s6 2 7 7M19 29c1-5 4-7 7-7s6 2 7 7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <h3>Made for households</h3>
+          <ul>
+            <li>Share your inventory and lists with family or roommates through iCloud</li>
+            <li>Rate items and recipes 1–5 in quarter steps, and see the household average</li>
+            <li>Changes sync across iPhone and Apple Watch</li>
+          </ul>
+        </article>
+        <article class="feat" style="background:var(--bg)">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#ffd6e0"/><path d="M22 7L12 22h7l-2 11 11-16h-7z" fill="#00a86b" stroke="#0a0a0a" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <h3>Quick actions everywhere</h3>
+          <ul>
+            <li>Siri: "Use milk in PantryPal" or "Add eggs to my PantryPal list"</li>
+            <li>Home Screen widgets and Control Center buttons to scan in or out</li>
+            <li>Print QR labels for things you grab often, like coffee pods, and scan one to use it</li>
+            <li>Apple Watch: check off your list, use an item with a tap, and see what's expiring</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap split">
+      <div class="copy">
+        <h2>Private by design</h2>
+      </div>
+      <div class="copy">
+        <p class="lead" style="color:var(--ink)">Your data stays on your devices and in your own iCloud account. Photos, receipts and recipes are read on your iPhone. No account to create, no ads, no tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band contact">
+    <div class="wrap box">
+      <div style="display:grid;gap:14px">
+        <h2>Try PantryPal</h2>
+        <p class="lead">PantryPal is in beta ahead of its App Store release. Email to join the beta, report a bug or ask a question.</p>
+        <a class="mail" href="mailto:ccramond@gmail.com?subject=PantryPal">ccramond@gmail.com</a>
+      </div>
+      <div class="row">
+        <a class="btn primary" href="mailto:ccramond@gmail.com?subject=PantryPal%20beta">Request beta access</a>
+        <a class="btn ghost" href="index.html">More from CCRAMOND</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> CCRAMOND</span>
+    <span><a href="index.html">Home</a> · <a href="mailto:ccramond@gmail.com">ccramond@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+{ document.getElementById('yr').textContent = new Date().getFullYear(); }
+</script>
+</body>
+</html>
